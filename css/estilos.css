@@ -1,0 +1,82 @@
+:root{
+	--fondo-principal:#40739e;
+	--color-días:#353b48;
+	--color-letras:#f5f6fa;
+	--color-tabla:#d1d8e0;
+	--color-hover:#2f3640;
+	--color-caja-texto:#d2dae2;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: var(--fondo-principal);
+}
+
+h1{
+	margin-top: 5%;
+	padding: 10px 20px;
+	text-align: center;
+	margin-bottom: 1.5em;
+	color: #fff;
+	font-size: 40px;
+	font-family: sans-serif;
+	text-shadow: 1px 3px 0 #000;
+	letter-spacing: 5px;
+	font-weight: bold;
+
+}
+
+table{
+	margin: auto;
+	border: 1px solid #000;
+	border-collapse: collapse;
+	width: 50%;
+}
+
+table tr{
+	background: var(--color-tabla);
+}
+
+table td{
+	border: solid #000 1px;
+	padding: 20px;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+table td:hover{
+	background: var(--color-hover);
+	color: var(--color-letras);
+	cursor: pointer;
+}
+
+table .días td{
+	background: var(--color-días);
+	color: var(--color-letras);
+	font-weight: 750;
+}
+
+.caja_texto{
+	background: var(--color-caja-texto);
+	width: 95%;
+	max-width: 1000px;
+	margin: 2em auto;
+	padding: 10px 20px;
+	font-family: sans-serif;
+	font-size: 17px;
+	height: 200px;
+	box-shadow: inset 2px 0 5px #000;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.caja_texto p{
+	margin:10px auto;
+	text-align: justify;
+	padding: 0 10px 0 10px;
+}
